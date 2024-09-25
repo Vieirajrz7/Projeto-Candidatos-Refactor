@@ -60,6 +60,7 @@ select:focus {
   background-color: #a8a8a8;
   border-radius: 10px;
   position: relative;
+  box-shadow: 0 0 5px rgba(102, 179, 255, 0.5);
 }
 
 .candidatos img {
