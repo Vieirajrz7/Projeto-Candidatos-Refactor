@@ -70,7 +70,7 @@ select:focus {
   transform: translateX(-50%); 
   width: 141px;
   height: 188px;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .candidatos #facebook, .candidatos #instagram {
