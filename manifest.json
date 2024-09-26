@@ -1,6 +1,6 @@
 {
-    "name": "Projeto Candidatos",
-    "short_name": "Candidatos",
+    "name": "Projeto Candidatos Refatoriado",
+    "short_name": "Candidatos Marcelo",
     "description": "Busca de candidatos a vereadores cadastrados no sistema",
     "start_url": "/",
     "display": "standalone",
@@ -21,4 +21,3 @@
     ],
     "lang": "pt-BR"
   }
-  
