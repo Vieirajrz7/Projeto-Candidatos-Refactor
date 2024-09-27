@@ -2,7 +2,7 @@
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
       navigator.serviceWorker
-        .register('/sw.js')
+        .register('/serviceWorker.js')
         .then((registration) => {
           console.log('Service Worker registrado com sucesso:', registration);
         })
@@ -11,7 +11,6 @@ if ('serviceWorker' in navigator) {
         });
     });
 }
-
 
 let selectCidades = document.querySelector('#cidades');
 let listaCidades = [];
