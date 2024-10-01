@@ -8,29 +8,19 @@ self.addEventListener('install', event => {
           '/css/style.css',
           '/js/main.js',
           '/images/facebook.svg',
-          '/images/instagram.svg',
-          '/images/photoProfile.png'
+          '/images/instagram.svg'
         ]);
       })
     );
   });
   
   self.addEventListener('fetch', event => {
-    if (event.request.destination === 'image') {
-      event.respondWith(
-        fetch(event.request).catch(() => {
-          return caches.match('images/photoProfile.png');
-        })
-      );
-    } else {
-      event.respondWith(
-        caches.match(event.request).then(response => {
-          return response || fetch(event.request);
-        })
-      );
-    }
+    event.respondWith(
+      caches.match(event.request).then(response => {
+        return response || fetch(event.request);
+      })
+    );
   });
-  
   
   self.addEventListener('notificationclick', event => {
     event.notification.close();
