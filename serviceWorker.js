@@ -19,7 +19,7 @@ self.addEventListener('install', event => {
     if (event.request.destination === 'image') {
       event.respondWith(
         fetch(event.request).catch(() => {
-          return caches.match('images/profile.png');
+          return caches.match('images/photoProfile.png');
         })
       );
     } else {
